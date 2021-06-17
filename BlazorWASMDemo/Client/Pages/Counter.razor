@@ -1,0 +1,13 @@
+﻿@page "/counter"
+
+
+<input type="text" @bind-value="_text" @bind-value:event="oninput" />
+<h2>@_text</h2>
+
+<h1>Counter</h1>
+
+<p>Increment amount: <input type="text" @bind-value="_incrementAmount"/></p>
+
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
